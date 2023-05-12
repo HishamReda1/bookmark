@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header container w-70">
+        <h1 class="opacity-25 py-5">Bookmarker</h1>
+        <hr>
+    </div>
+    <div class="container bg-light text-center py-4">
+
+        <h2 class="bold py-4 text-bg-light ">Bookmark your favorite sites </h2>
+        <label for="siteName">Site Name</label>
+        <input id="siteName" placeholder="" type="text" class="form-control" required />
+    <div id="err1"></div>
+        <label for="siteUrl">Site URL</label>
+        <input id="siteUrl" placeholder="website URL" type="text" class="form-control" required/>
+        <div id="errors"></div>
+            <button class="btn btn-primary my-4" id="my_button" onclick="addsite()">Submit</button>
+
+            <table>
+                <thead>
+                    <th></th>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <h2></h2>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <footer class="opacity-25 d-flex ">© 2019 Bookmarker Inc.</footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
